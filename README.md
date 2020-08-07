@@ -1,4 +1,4 @@
 # typescript
 
 > use `tsc <file_name.ts>` for compiling
-> then use `noode <file_name.js>` for running
+> then use `node <file_name.js>` for running
