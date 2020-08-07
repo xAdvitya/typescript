@@ -1,12 +1,20 @@
 class Dimension{
-    a:number;
 
-    me(abc:number){
-        this.a = abc;
-        console.log(this.a);
-        return this.a;
+   private name:String;
+   private salary:number;
+
+    constructor(){
+        this.salary = 0;
+        this.name="";
+    }
+    show(salary:number,name:String){
+
+        this.salary = salary;
+        this.name = name;
+        console.log(this.salary);
+        console.log(this.name);
     }
 }
 
-const hi = new Dimension();
-hi.me(12);
+const Adv = new Dimension();
+Adv.show(999999999,"Advitya");
