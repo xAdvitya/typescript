@@ -1,20 +1,19 @@
-class Dimension{
+export class Dimension{
 
    private name:String;
    private salary:number;
+   private age:number;
 
-    constructor(){
-        this.salary = 0;
-        this.name="";
-    }
-    show(salary:number,name:String){
-
+    constructor(salary: number, name:string ,age?:number){
         this.salary = salary;
-        this.name = name;
+        this.name= name;
+        this.age = age;
+    }
+    show(){
         console.log(this.salary);
         console.log(this.name);
+        if(this.age > 0){
+            console.log(this.age);
+        }
     }
 }
-
-const Adv = new Dimension();
-Adv.show(999999999,"Advitya");
