@@ -3,10 +3,10 @@ interface Student{
     roll:number;
 }
 
-let adv = {name:"Advitya",roll:12}
-
 const assign = (student:Student) =>{
     console.log(student.name);
 }
+
+let adv = { name: "Advitya", roll: 12 }
 
 assign(adv);
